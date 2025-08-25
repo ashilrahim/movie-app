@@ -85,7 +85,7 @@ const App = () => {
 
       <div className="wrapper">
         <header>
-          <img src="/movie-app/hero-img.png" alt="hero-img" />
+          <img src="/hero-img.png" alt="hero-img" />
           <h1>
             Find <span className="text-gradient">Movies</span>You'll enjoy
             without hassles
