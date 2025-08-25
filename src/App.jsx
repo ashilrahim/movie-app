@@ -85,7 +85,7 @@ const App = () => {
 
       <div className="wrapper">
         <header>
-          <img src="./hero-img.png" alt="hero-img" />
+          <img src="/movie-app/hero-img.png" alt="hero-img" />
           <h1>
             Find <span className="text-gradient">Movies</span>You'll enjoy
             without hassles
@@ -99,7 +99,7 @@ const App = () => {
             <h2>Trending Movies</h2>
             <ul>
               {isTrending.map((movie, index) => (
-                <li key={movie.id}>
+                <li key={movie.$id}>
                   <p> {index + 1} </p>
                   <img src={movie.poster_url} alt="{movie.title}" />
                 </li>
