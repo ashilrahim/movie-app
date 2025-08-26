@@ -5,6 +5,7 @@ import MovieCard from "./components/MovieCard";
 import { useDebounce } from "react-use";
 import { getTrendingMovies, updatedSearch } from "./appwrite.js";
 import { Analytics } from "@vercel/analytics/next"
+import { SpeedInsights } from "@vercel/speed-insights/next"
 
 const App = () => {
   const [searchTerm, setSearchTerm] = useState("");
@@ -82,7 +83,7 @@ const App = () => {
 
   return (
     <main>
-      <Analytics />
+      
       <div className="pattern" />
 
       <div className="wrapper">
@@ -124,6 +125,8 @@ const App = () => {
           )}
         </section>
       </div>
+      <Analytics />
+      <SpeedInsights />
     </main>
   );
 };
