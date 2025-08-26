@@ -4,6 +4,7 @@ import Spinner from "./components/Spinner";
 import MovieCard from "./components/MovieCard";
 import { useDebounce } from "react-use";
 import { getTrendingMovies, updatedSearch } from "./appwrite.js";
+import { Analytics } from "@vercel/analytics/next"
 
 const App = () => {
   const [searchTerm, setSearchTerm] = useState("");
@@ -81,6 +82,7 @@ const App = () => {
 
   return (
     <main>
+      <Analytics />
       <div className="pattern" />
 
       <div className="wrapper">
