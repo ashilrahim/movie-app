@@ -13,7 +13,7 @@ const Search = ({ searchTerm, setSearchTerm }) => {
           onChange={(e) => setSearchTerm(e.target.value)}
         />
 
-        <button
+        <button id="text"
           onClick={() => setSearchTerm("")}
           className="absolute right-6 top-2.5 cursor-pointer text-gray-200 hover:text-white transition-colors duration-200"
         >

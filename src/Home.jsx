@@ -122,6 +122,7 @@ const Home = () => {
             <p className="text-red-500">{errorMsg}</p>
           ) : (
             <ul>
+              
               {movieList.map((movie) => (
                 <MovieCard key={movie.id} movie={movie} />
               ))}
